@@ -11,6 +11,7 @@ function createSeconds(seconds) {
     });
 }
 function startClock() {
+    clearInterval(timer);
     timer = setInterval(function () {
         seconds++;
         clockElement.innerText = createSeconds(seconds);
